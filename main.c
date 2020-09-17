@@ -5,17 +5,15 @@
 
 int main(int argc, char *argv[]) {
 
-	int input_int;
-	float input_float;
+	char c;
+	int i;
 
-	printf("enter an integer : ");
-	scanf("%d", &input_int);
-
-	printf("enter an float : ");
-	scanf("%f", &input_float);
-
-	printf("integer : %d, float : %f\n", input_int, input_float);
-		
+	printf("input a number : ");
+	scanf("%c", &c);
+	
+	i = c - '0';
+	printf("The input number is %i\n", i);
+	
 	return 0;
 }
 
